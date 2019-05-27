@@ -81,7 +81,7 @@ export class AuthService {
     this._expiresAt = 0;
     localStorage.clear();
     this.auth0.logout({
-      returnTo: window.location.origin
+      returnTo: 'https://avantkaramol.github.io/testproject/'
     });
   }
 
