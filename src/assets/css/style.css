@@ -122,3 +122,9 @@ header .navbar-primary{
 .notfound .notfound-404 h1 { 
   background: url('../images/text.png'); 
 } 
+
+@media screen and (max-width: 600px) {
+	.rightPanel{
+		top: 15%
+	}
+}

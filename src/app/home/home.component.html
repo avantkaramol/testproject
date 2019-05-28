@@ -1,15 +1,17 @@
 <div>
 	<app-header [isResult]="isResult" [searchName]="username" [error]="error"></app-header>
 	<div class="container grid-xl main-containt">
-		<div class="searchTweetHomepage" *ngIf="!isResult && !error">
-			<app-search-tweet [searchName]="username"></app-search-tweet>
-		</div>
-		<div class="searchTweetHomepage">
-			<p *ngIf="error">{{error}}</p>
+		<div class="columns">
+			<div class="column col-4 col-sm-12 searchTweetHomepage" *ngIf="!isResult && !error">
+				<app-search-tweet [searchName]="username"></app-search-tweet>
+			</div>
+			<div class="column col-4 col-sm-12 searchTweetHomepage ">
+				<p *ngIf="error">{{error}}</p>
+			</div>
 		</div>
 
 	<div class="columns">
-		<div class="column col-3">
+		<div class="column col-3 col-sm-12">
 			<div class="user-profile-card" *ngIf="isResult">
 				<div class="card">
 					<div class="card-image">
@@ -45,7 +47,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="column col-6">
+		<div class="column col-6 col-sm-12">
 			<div class="twitterContainer" *ngIf="isResult && twitterUser">
 				<div class="card" *ngFor="let tweet of twitterUser.tweets">
 					<div class="card-body">
