@@ -123,8 +123,8 @@ header .navbar-primary{
   background: url('../images/text.png'); 
 } 
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
 	.rightPanel{
-		top: 15%
+		top: 0%;
 	}
 }
